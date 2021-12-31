@@ -18,6 +18,14 @@ async def on_ready():
 async def on_message(ctx):
 	await crossbot.message(ctx, client)
 
+@client.event
+async def on_guild_channel_delete(channel):
+	await crossbot.delete_channel(channel, client)
+
+@client.event
+async def on_raw_reaction_add(payload):
+	await crossbot.reactions(payload, client)
+
 try:
 	token = os.getenv('TOKEN')
 	client.run(token)

@@ -1,5 +1,5 @@
-> Syntax
+> **Syntax**
 `crossberry remove`
 
-> Usage
+> **Usage**
 Removes `cross-server` ability from the channel, in which the command was used.
