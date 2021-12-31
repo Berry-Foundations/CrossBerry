@@ -1,5 +1,5 @@
-> Prefixes
+> **Prefixes**
 `crossberry`, `cross`, `cb`
 
-> Commands
+> **Commands**
 `help`, `add`, `remove`
