@@ -3,10 +3,111 @@
 <head>
 	<title>CrossBerry</title>
 
+	<link rel="shortcut icon" href="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true">
+
 	<style>
 		* {
 			background: transparent;
 			color: #ffffff;
+			margin: 0;
+			padding: 0;
+			font-family: 'nasalization', sans-serif;
+			cursor: default;
+		}
+
+		::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+		::-webkit-scrollbar-track {
+			background: #2c2f33;
+		}
+		::-webkit-scrollbar-thumb {
+			background: #5865f2;
+		}
+
+		img {
+			z-index: 2;
+			user-select: none;
+		}
+
+		@keyframes move {
+			0% {
+				left: -50vh;
+			}
+			100% {
+				left: 100%;
+			}
+		}
+		.logo {
+			width: 100%;
+			margin: 0;
+			overflow: hidden;
+			height: 50%;
+			position: absolute;
+			padding: 0;
+		}
+		.cb1 {
+			height: 25vh;
+			position: absolute;
+			left: 0%;
+			animation: move 100s infinite;
+			margin: 0;
+			top: 20%;
+		}
+		.cb2 {
+			height: 40vh;
+			position: absolute;
+			animation: move 150s infinite;
+			left: 0%;
+			margin: 0;
+			top: 20%;
+		}
+		.cb3 {
+			height: 20vh;
+			position: absolute;
+			animation: move 120s infinite;
+			left: 0%;
+			top: 30%;
+			margin: 0;
+		}
+		.cb4 {
+			height: 35vh;
+			position: absolute;
+			animation: move 80s infinite;
+			left: 0%;
+			top: 25%;
+			margin: 0;
+		}
+		.cb5 {
+			height: 25vh;
+			position: absolute;
+			animation: move 30s infinite;
+			left: 0%;
+			top: 30%;
+			margin: 0;
+		}
+		.cb6 {
+			height: 30vh;
+			position: absolute;
+			animation: move 110s infinite;
+			left: 0%;
+			top: 40%;
+			margin: 0;
+		}
+		.cb7 {
+			height: 10vh;
+			position: absolute;
+			animation: move 15s infinite;
+			left: 0%;
+			top: 20%;
+			margin: 0;
+		}
+		.cbm {
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 
 		.bg {
@@ -27,11 +128,53 @@
 			border-radius: 2vh;
 			font-size: 4vh;
 			cursor: pointer;
+			color: #000000;
+		}
+
+		.main {
+			position: absolute;
+			top: 50%;
+			padding: 3vh;
+			text-align: center;
+			width: calc(100% - 6vh);
+		}
+
+		h1 {
+			font-size: 10vh;
+			margin: 2vh;
+			user-select: none;
+		}
+
+		p {
+			font-size: 6vh;
+			margin: 2vh;
+		}
+
+		::selection {
+			background: #5865f2;
+			color: #000000;
 		}
 	</style>
 </head>
 <body>
-	<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=894131041390977074&permissions=275418132032&scope=bot%20applications.commands');">Add</button>
+	<div class="logo">
+		<img class="cb1" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb2" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb3" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb4" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb5" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb6" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cb7" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+		<img class="cbm" src="https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true" />
+	</div>
+
+	<div class="main">
+		<h1>Connect To World!</h1>
+		<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=894131041390977074&permissions=275418132032&scope=bot%20applications.commands');">Add</button>
+		<p>
+			A cross server connector bot to chat with members of other servers who are not in your server!
+		</p>
+	</div>
 
 	<div class="bg"></div>
 </body>
