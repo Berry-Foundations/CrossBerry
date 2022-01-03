@@ -2,8 +2,37 @@
 <html lang="en">
 <head>
 	<title>CrossBerry</title>
+
+	<style>
+		* {
+			background: transparent;
+			color: #ffffff;
+		}
+
+		.bg {
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background: #2c2f33;
+			z-index: -1;
+		}
+
+		button {
+			user-select: none;
+			background: #5865f2;
+			padding: 3vh;
+			border: none;
+			border-radius: 2vh;
+			font-size: 4vh;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 	<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=894131041390977074&permissions=275418132032&scope=bot%20applications.commands');">Add</button>
+
+	<div class="bg"></div>
 </body>
 </html>
