@@ -18,7 +18,7 @@ A cross server connector bot to chat with members of other servers who are not i
 
 # Creator Info
 - Created under Berry Tech (Berry Foundations)
-- Created by Attacment Aditya (Report Bugs To Him)
+- Created by Attachment Aditya (Report Bugs To Him)
 - Produced with help of Attachment Studios
 
 # Links
